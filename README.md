@@ -1,1 +1,4 @@
 # Movie-Recomendation
+In this project we create a clustering model based on a movie dataset. The movie data set will have a movieId, title, and a genres. We will One hot encode the genres column so that it can be used with our clustering model. We also have a ratings dataset that corresponds to the movies dataset. We will average the ratings out for each movie and add it to our movies data set. We also have a corresponding tags dataset, with this dataset we will find the most frequent tags for each movie and then add it to the corresponding movie in our movies data set. These tags will be label encoded for use with our clusterer.
+
+You can get recommendations for a movie by calling recommend_movies(title). The recommendation system works by finding movies in the same cluster category as the input title and then randomly sampling the movies in that category. It will return a list of 10 movie titles.
